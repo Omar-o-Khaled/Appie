@@ -1065,7 +1065,6 @@ footer hr{
     color: #777;
 }
 .move_up{
-    opacity: 20%;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -1079,7 +1078,7 @@ footer hr{
     transition: all .2s;
 }
 .move_up:hover{
-    opacity: 100%;
+    background-color: #ffb300;
 }
 .move_up a{
     width: 100%;
