@@ -16,10 +16,12 @@ const parent_section=document.querySelector(".parent_section");
 const obs=new IntersectionObserver(function(entries){
     const ent = entries[0];
     if(ent.isIntersecting === false){
-        document.body.classList.add("sticky")
+        document.body.classList.add("sticky");
+        document.querySelector(".move_up").style.position="fixed";
+
     }else{
-        document.body.classList.remove("sticky")
-        
+        document.body.classList.remove("sticky");
+        document.querySelector(".move_up").style.position="absolute";
     }
 
 },{
